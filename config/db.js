@@ -9,7 +9,7 @@ const Grid = require('gridfs-stream');
 
 
 //URI
-const MONGO_URI = 'mongodb://localhost:27017/Challenge';
+const MONGO_URI = 'mongodb://deepak:abc12345678@ds135624.mlab.com:35624/a2z';
 
 //Create mongo connection 
 const connection = mongoose.createConnection(MONGO_URI);

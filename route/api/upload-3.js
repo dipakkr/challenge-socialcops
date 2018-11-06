@@ -16,4 +16,9 @@ router.post('/upload', upload.single('filename'), (req, res)=>{
   res.send(req.file);
 });
 
+// Test Route
+router.get('/test', (req,res)=>{
+  res.send({"message" : "Example 3 endpoint working"});
+}); 
+
 module.exports = router;
