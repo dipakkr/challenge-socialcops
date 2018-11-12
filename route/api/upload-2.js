@@ -19,6 +19,7 @@ const upload = multer({ storage });
 
 // @route POST /upload - Example 2 DEMO
 router.post('/upload', upload.single('filename'), (req, res)=>{
+    // Upload complete
     res.send(req.file);
 }, (err)=>{
     if(err) res.status(404).send(err);

@@ -12,7 +12,6 @@ router.post('/upload', upload.single('filename'), (req, res)=>{
   req.on('close', function(){
     res.send({"message" : "Upload Cancelled by User"});
   });
-  
   res.send(req.file);
 });
 
